@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Use the free Word Counter & Character Counter tool to instantly count words and characters. Perfect for students, bloggers, writers, and SEO users to optimize content length accurately.">
+    <meta name="keywords" content="word counter, character counter, students, bloggers, writers, SEO, word count tool, character count">
+    <meta name="author" content="Word Counter">
+    <meta property="og:title" content="Free Word Counter & Character Counter Tool for Students, Bloggers, Writers & SEO Users">
+    <meta property="og:description" content="Use the free Word Counter & Character Counter tool to instantly count words and characters. Perfect for students, bloggers, writers, and SEO users to optimize content length accurately.">
+    <meta property="og:type" content="website">
+    <title>Free Word Counter & Character Counter Tool for Students, Bloggers, Writers & SEO Users</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-calculator"></i>
+                    <span>Word Counter</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Background Animation -->
+    <section class="hero-section">
+        <div class="particles-container" id="particlesContainer"></div>
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Free Word Counter & Character Counter Online</h1>
+                <p class="hero-subtitle">
+                    The ultimate tool for students, bloggers, writers, and SEO professionals to count words, 
+                    characters, and optimize content instantly. Fast, accurate, and completely free.
+                </p>
+                
+                <!-- Word Counter Tool -->
+                <div class="counter-tool">
+                    <textarea 
+                        id="textInput" 
+                        placeholder="Start typing or paste your text here..."
+                        aria-label="Text input for word and character counting"
+                    ></textarea>
+                    
+                    <div class="counter-stats">
+                        <div class="stat-item">
+                            <div class="stat-value" id="wordCount">0</div>
+                            <div class="stat-label">Words</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="charCount">0</div>
+                            <div class="stat-label">Characters</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="charCountNoSpace">0</div>
+                            <div class="stat-label">Characters (no spaces)</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="sentenceCount">0</div>
+                            <div class="stat-label">Sentences</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="paragraphCount">0</div>
+                            <div class="stat-label">Paragraphs</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" id="readingTime">0</div>
+                            <div class="stat-label">Reading Time (min)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="tool-actions">
+                        <button class="btn btn-primary" id="clearBtn">
+                            <i class="fas fa-eraser"></i> Clear Text
+                        </button>
+                        <button class="btn btn-secondary" id="copyBtn">
+                            <i class="fas fa-copy"></i> Copy Text
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Content Sections -->
+    <section class="content-section">
+        <div class="container">
+            <!-- Students Section -->
+            <div class="feature-card fade-in-up">
+                <div class="feature-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Perfect for Students</h2>
+                    <p>
+                        As a student, meeting word count requirements for essays, research papers, and assignments is crucial. 
+                        Our Word Counter helps you stay within the required limits set by your professors and educational institutions. 
+                        Whether you're writing a 500-word essay or a 5,000-word thesis, track your progress in real-time and ensure 
+                        you meet academic standards. Students worldwide trust our tool for accurate word counting, helping them 
+                        focus on content quality rather than manual counting.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Track essay word count requirements</li>
+                        <li><i class="fas fa-check"></i> Monitor assignment length limits</li>
+                        <li><i class="fas fa-check"></i> Perfect for thesis and dissertation writing</li>
+                        <li><i class="fas fa-check"></i> Real-time character counting for citations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloggers & Writers Section -->
+            <div class="feature-card fade-in-up">
+                <div class="feature-icon">
+                    <i class="fas fa-pen-fancy"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Essential for Bloggers & Writers</h2>
+                    <p>
+                        Bloggers and content writers need to maintain optimal article lengths for maximum reader engagement. 
+                        Publishing platforms often have specific character limits for titles, meta descriptions, and social media posts. 
+                        Our tool helps writers create perfectly-sized content that meets publishing standards while maintaining readability. 
+                        Track your writing progress, optimize article length for different platforms, and ensure your content fits 
+                        within Medium, WordPress, LinkedIn, and other publishing requirements. Professional writers rely on accurate 
+                        word counting to deliver quality content consistently.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Optimize blog post length for engagement</li>
+                        <li><i class="fas fa-check"></i> Meet platform-specific word requirements</li>
+                        <li><i class="fas fa-check"></i> Calculate reading time for your audience</li>
+                        <li><i class="fas fa-check"></i> Perfect for social media character limits</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SEO Users Section -->
+            <div class="feature-card fade-in-up">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="feature-content">
+                    <h2>Powerful Tool for SEO Users</h2>
+                    <p>
+                        SEO professionals understand that content length directly impacts search engine rankings. Google favors 
+                        comprehensive, in-depth content that typically ranges from 1,500 to 2,500 words for competitive keywords. 
+                        Our Word Counter helps SEO users optimize content length for better SERP performance, ensuring articles are 
+                        substantial enough to rank well. Monitor keyword density, track meta description character limits (155-160 characters), 
+                        and create content that meets SEO best practices. Digital marketers use our tool to craft SEO-optimized content 
+                        that drives organic traffic and improves search visibility.
+                    </p>
+                    <ul class="feature-list">
+                        <li><i class="fas fa-check"></i> Optimize content length for SEO rankings</li>
+                        <li><i class="fas fa-check"></i> Track meta description character limits</li>
+                        <li><i class="fas fa-check"></i> Ensure comprehensive content for SERP</li>
+                        <li><i class="fas fa-check"></i> Monitor keyword optimization and density</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Word Counter?</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-icon-small">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Real-time counting as you type with instant results</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-small">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>100% Private</h3>
+                    <p>Your text stays on your device - no data storage</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-small">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Friendly</h3>
+                    <p>Works perfectly on all devices and screen sizes</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon-small">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>Completely Free</h3>
+                    <p>No registration, no hidden fees, unlimited usage</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col">
+                    <a href="index.html" class="footer-logo">
+                        <i class="fas fa-calculator"></i>
+                        <span>Word Counter</span>
+                    </a>
+                    <p class="footer-desc">
+                        The most accurate and user-friendly word counting tool for students, bloggers, writers, 
+                        and SEO professionals. Count words and characters instantly with complete privacy.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Tools -->
+                <div class="footer-col">
+                    <h4>Tools</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Word Counter</a></li>
+                        <li><a href="index.html">Character Counter</a></li>
+                        <li><a href="index.html">Reading Time Calculator</a></li>
+                        <li><a href="index.html">Sentence Counter</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="index.html">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Legal -->
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="index.html">Terms of Service</a></li>
+                        <li><a href="index.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Word Counter. All rights reserved. | Empowering students, bloggers, writers, and SEO professionals worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/counter.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
